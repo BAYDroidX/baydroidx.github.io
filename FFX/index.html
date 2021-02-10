@@ -12,8 +12,8 @@
          font-family: "Roboto",sans-serif;
          }
          .header {
-         padding: 10px;
-         background: #2160C2;
+         padding: 15px;
+         background: #284B74;
          color: white;
          font-size: 18px;
        /*  position: absolute !important;*/
@@ -21,7 +21,7 @@
          left: 0;
          top: 0;
         /* z-index: 1030;*/
-        margin-bottom: 60px!important;
+        margin-bottom: 30px!important;
          }
          .container {
         /* margin-top:60px !important;*/
@@ -52,9 +52,8 @@
          color: #ffffff;
          text-align: center;
          text-decoration: none;
-         display: inline-block;
          font-size: 16px;
-         border-radius: 8px;
+         border-radius: 4px;
          outline: none;
          }
          .numberCircle {
@@ -67,6 +66,10 @@
          color: #666;
          text-align: center;
          font: 38px Arial, sans-serif;
+         }
+         p{
+           line-height: 1.3rem;
+           font-size: 14px;
          }
          p a{
          text-decoration: none;
@@ -99,6 +102,7 @@
          li{
            padding-left: 5px;
            line-height: 1.5rem;
+           font-size: 14px;
          }
          li::before{
            content:"\f105";
@@ -121,7 +125,11 @@
            display: inline-block;
          }
          h1,h2,h3,h5,h4{
-           color:#3E434B;
+           color:#50555B;
+          
+         }
+         h3{
+           font-size: 18px;
          }
          a{
            text-decoration: none!important;
@@ -133,23 +141,37 @@
            display: inline-block;
            padding-left: 2px;
          }
+         footer{
+           background: #1F3B5C;
+           padding:16px;
+           color:white;
+           font-size: 14px;
+         }
+         .subscribe{
+           background: #c4302b;
+           float:right;
+         }
       </style>
 
    </head>
    <body>
-   <div class="header">
-     <div class="container">
-       <b>FFX</b>
-     </div>
-   </div>
+  <div class="header"><div class="container">BAY DROID</div></div>
    <div class="container">
-  
+     <center>
+        <img src="/FFX/logo.png" width="58" height="58" />
+        <h3>FFX</h3>
+        <button onclick="dl()" class="button">DOWNLOAD</button>
+     </center>
+     <hr>
+     <h3>About</h3>
+     <p><b>FFX</b> - is a simple application to make playing <b>Free Fire </b>games easier. This is like a cheat, but it is not suspended or anti-suspended by Garena</p>
+     <hr>
      <h3>Get started</h3>
      <p>
       <ul>
         <li>Device minimum android 16 (kitkat)</li>
         <li>Root or NO Root device</li>
-        <li>Install latest version app.See <a href="#">latest version</a> </li>
+        <li>Install latest version </a> </li>
         <li>Does not work on virtual app</li>
       </ul>
      </p>
@@ -157,9 +179,37 @@
      <h3>How to use</h3>
      <ul>
        <li>Make sure the Free Fire ori & latest version</li>
-       <li>Then open the FFX application</li>
+       <li>Then open the <b>FFX</b> application</li>
        <li>If the app requests storage permission, grant it</li>
+       <li>To activate, click the button of the feature to be selected,select feature on dialog and click OK</li>
+       <li>To deactivate, click the feature button that has been selected again,select OFF on the dialog and click OK</li>
+       <li>And open the free fire application</li>
      </ul>
+     <hr>
+     <h3>Fix bugs</h3>
+     <p>If you use the skin pack feature, it usually gets stuck loading in the free fire application or skin feature not working,How to fix stuck loading?</p>
+     <p>The problem is that you haven't downloaded the expansion packs yet, so you just need to download all expansion packs first.</p>
+     <hr>
+     <p>
+       This FFX application is safe and tested to be 100% anti-banned. So download and install it!(◠‿◕)
+     .If you have any questions please contact us: <a href="mailto:cs.baydroid@gmail.com">cs.baydroid@gmail.com</a>
+     </p>
+     
+     <br><br>
+     <button onclick="subs()" class="button subscribe">SUBSCRIBE</button>
+     <br><br><br>
+     
    </div>
+  
+   <footer><div class="container"><center>© 2021 Bay Droid - Allright reserved</center></div></footer>
+   <script>
+     function dl(){
+       window.open("/FFX/FFX.apk");
+     
+     }
+     function subs(){
+       window.open("https://youtube.com/channel/UC0gCgfIV-_Ti8JaUGWBDY4w");
+     }
+   </script>
       </body>
 </html>
