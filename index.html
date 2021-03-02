@@ -76,8 +76,18 @@
 
     .b-menu-m a {
       color: #444;
+      font-size: 14px;
     }
-
+    .b-menu-m ul{
+      list-style: none;
+      margin:0;
+      padding-left:0;
+    }
+    .b-menu-m li{
+      padding-top: 5px;
+      padding-bottom: 5px;
+      border-bottom: 1px solid #efefef;
+    }
     .b-menu-m-wrap {
       width: 100%;
       height: 100%;
@@ -162,7 +172,10 @@
   </nav>
   <div class="b-menu-m-wrap"></div>
   <div class="b-menu-m">
-    <a href="#">MENU</a>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/mod-menu-ff">Mod Menu Free Fire</a></li>
+    </ul>
   </div>
   <div class="container ext-container">
     <div class="card mt-5">
@@ -182,6 +195,7 @@
   </div>
   <script>
     $(document).ready(function() {
+      $("input[type=checkbox]").prop('checked', false);
       $.ajax({
         url: '/youtube.json',
         type: 'get',
