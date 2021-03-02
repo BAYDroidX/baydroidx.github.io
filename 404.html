@@ -5,13 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Not found</title>
 </head>
-<center>
-  <h4>404 - Not found</h4>
-  <hr/>
- <small>~ BAY DROID ~</small>
-</center>
-<body>
 
+<body>
+  <center>
+    <h4>404 - Not found</h4>
+    <hr />
+    <small>~ BAY DROID ~</small>
+    <div id="video">
+      
+    </div>
+  </center>
+  
+<script>
+var uri = [
+ "https://www.youtube.com/embed/zpOULjyy-n8?rel=0",
+  "https://www.youtube.com/embed/zpOULjyy-n8?rel=1",
+  "https://www.youtube.com/embed/zpOULjyy-n8?rel=2",
+];
+var div1 = "<iframe src='";
+var div2 = "'></iframe><br/>";
+for (var i = 0; i < uri.length; i++) {
+  document.getElementById("video").innerHTML = div1+uri[i]+div2;
+}
+</script>
 </body>
 
 </html>
